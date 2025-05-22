@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IphoneStockObservable implements StockObservable{
+
+    // It stores all registered observers who are interested in being notified when the observable changes.
     List<NotificationAlertObserver> notificationAlertObserverList = new ArrayList<>();
     String items;
     @Override
